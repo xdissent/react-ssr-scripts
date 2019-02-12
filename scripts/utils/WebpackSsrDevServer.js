@@ -131,7 +131,8 @@ module.exports = class WebpackSsrDevServer {
   loadSsrEntrypoint() {
     const path = this.entrypointPath(this.stats.ssr)
     const src = this.compilers.ssr.outputFileSystem.readFileSync(path, 'utf8')
-    const mod = new Module()
+    const mod = new Module(path, module)
+    mod.paths = module.paths
     mod._compile(src, path)
     return mod.exports.default != null ? mod.exports.default : mod.exports
   }

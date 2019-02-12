@@ -1,0 +1,27 @@
+{
+  "name": "react-ssr-scripts",
+  "version": "2.1.5",
+  "private": true,
+  "files": [
+    "bin",
+    "config",
+    "scripts",
+    "template"
+  ],
+  "bin": {
+    "react-ssr-scripts": "./bin/react-ssr-scripts.js"
+  },
+  "dependencies": {
+    "babel-preset-react-app": "^7.0.1",
+    "express": "^4.16.4",
+    "memory-fs": "~0.4.1",
+    "react-dev-utils": "^7.0.3",
+    "react-scripts": "2.1.5",
+    "webpack": "4.28.3",
+    "webpack-dev-server": "3.1.14",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
